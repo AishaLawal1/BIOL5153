@@ -15,8 +15,9 @@ parser.add_argument("FASTA_file",help="enter the FASTA file", type=str)
 
 args = parser.parse_args()
 
-file = covid.gff
-open (file)
+ file = covid.gff
+ 
+with open(file_name) as f:
+    for line in f:
+        print(line)
 
-for value in file:
-print(value)
